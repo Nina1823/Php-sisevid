@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .menuCSS3 ul {
+            display: flex;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .menuCSS3 a {
+            display: block;
+            padding: 2em;
+            background-color: #F9B53C;
+            text-decoration: none;
+            color: #191C26;
+        }
+
+        .menuCSS3 a:hover {
+            background-color: #CC673B;
+        }
+
+        .menuCSS3 ul li ul {
+            display: none;
+        }
+
+        .menuCSS3 ul li a:hover+ul,
+        .menuCSS3 ul li ul:hover {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="menuCSS3">
+        <ul>
+            <li><a href="vistaAutor.php">Autor</a>
+            <li><a href="vistaEstado.php">Estado</a></li>
+            <li><a href="VistaFrecuencia.php">Frecuencia</a></li>
+            <li><a href="vistaFuente.php">Fuente</a></li>
+            <li><a href="VistaRepresenVisual.php">RepresenVisual</li>
+            <li><a href="VistaResponsable.php">Responsable</a></li>
+            <li><a href="VistaSentido.php">Sentido</a></li>
+            <li><a href="vistaTipoEvidencia.php">Tipo Evidencia</a></li>
+            <li><a href="VistaUnidadMedida.php">Unidad Medida</a></li>
+            <li><a href="#">Contacto</a>
+                <ul>
+                    <li><a href="#">Email</a></li>
+                    <li><a href="#">Mapa</a></li>
+                </ul>
+
+            </li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>
