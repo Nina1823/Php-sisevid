@@ -7,11 +7,11 @@ class ControlRepresentVisual_Indicador
         $this->objRepresentVisual_Indicador = $objRepresentVisual_Indicador;
     }
 
-|
+
     function guardar()
     {
-        $fkidindicador = this->objRepresentVisual_Indicador->getFkindicador();
-        $fkidrepresentacionvisual; = this->objRepresentVisual_Indicador->getFkidrepresentacionvisual();
+        $fkidindicador = $this->objRepresentVisual_Indicador->getFkindicador();
+        $fkidrepresentacionvisual = $this->objRepresentVisual_Indicador->getFkidrepresentacionvisual();
 
         $comandoSql = "INSERT INTO representvisual_indicador(fkidindicador,fkidrepresentacionvisual) VALUES ('$fkidindicador', '$fkidrepresentacionvisual')";
         $objControlConexion = new ControlConexion();
@@ -22,7 +22,7 @@ class ControlRepresentVisual_Indicador
 
     function consultar()
     {
-        $fkidindicador = $this->objfkidrepresentacionvisual->getfkidindicador();
+        $fkidindicador = $this->objRepresentVisual_Indicador->getfkidindicador();
         $comandoSql = "SELECT * FROM representvisual_indicador WHERE fkidindicador = '$fkidindicador'";
         $objControlConexion = new ControlConexion();
         $objControlConexion->abrirBd($GLOBALS['serv'], $GLOBALS['usua'], $GLOBALS['pass'], $GLOBALS['bdat'], $GLOBALS['port']);
@@ -36,10 +36,10 @@ class ControlRepresentVisual_Indicador
 
     function modificar()
     {
-        $fkidindicador = this->objRepresentVisual_Indicador->getFkindicador();
-        $fkidrepresentacionvisual; = this->objRepresentVisual_Indicador->getFkidrepresentacionvisual();
+        $fkidindicador = $this->objRepresentVisual_Indicador->getFkindicador();
+        $fkidrepresentacionvisual = $this->objRepresentVisual_Indicador->getFkidrepresentacionvisual();
 
-        $comandoSql = "UPDATE variable SET fkidindicador='$fkidindicador',fkidrepresentacionvisual='$fkidrepresentacionvisual' WHERE id = '$id'";
+        $comandoSql = "UPDATE variable SET fkidindicador='$fkidindicador',fkidrepresentacionvisual='$fkidrepresentacionvisual' WHERE id = '$fkidindicador'";
         $objControlConexion = new ControlConexion();
         $objControlConexion->abrirBd($GLOBALS['serv'], $GLOBALS['usua'], $GLOBALS['pass'], $GLOBALS['bdat'], $GLOBALS['port']);
         $objControlConexion->ejecutarComandoSql($comandoSql);
@@ -48,8 +48,8 @@ class ControlRepresentVisual_Indicador
 
     function borrar()
     {
-        $fkidindicador = this->objRepresentVisual_Indicador->getFkindicador();
-        $comandoSql = "DELETE FROM representvisual_indicador WHERE id = '$id'";
+        $fkidindicador = $this->objRepresentVisual_Indicador->getFkindicador();
+        $comandoSql = "DELETE FROM representvisual_indicador WHERE id = '$fkidindicador'";
         $objControlConexion = new ControlConexion();
         $objControlConexion->abrirBd($GLOBALS['serv'], $GLOBALS['usua'], $GLOBALS['pass'], $GLOBALS['bdat'], $GLOBALS['port']);
         $objControlConexion->ejecutarComandoSql($comandoSql);

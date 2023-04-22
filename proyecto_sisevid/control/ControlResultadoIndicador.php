@@ -22,9 +22,7 @@
     
         function consultar() {
             $id= $this->objResultadoIndicador->getId(); 
-            
-
-            echo($id);
+        
             $comandoSql = "SELECT * FROM resultadoindicador WHERE id = '$id'";
             $objControlConexion = new ControlConexion();
             $objControlConexion->abrirBd($GLOBALS['serv'],$GLOBALS['usua'],$GLOBALS['pass'],$GLOBALS['bdat'],$GLOBALS['port']);

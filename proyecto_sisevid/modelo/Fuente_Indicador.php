@@ -4,7 +4,7 @@
   	var $fkidindicador;
   	function __construct($fkidfuente,$fkidindicador){
   		$this->fkidfuente=$fkidfuente;
-  		$this->fkidrepresentacionvisual=$fkidrepresentacionvisual;
+  		$this->fkidindicador=$fkidindicador;
   	}
   	function setFkidindicador($fkidindicador){
   		$this->fkidindicador=$fkidindicador;

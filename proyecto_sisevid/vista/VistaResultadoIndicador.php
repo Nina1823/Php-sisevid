@@ -434,14 +434,14 @@ switch ($boton) {
 				<!-- //Alert tener cuidado porque me redirecciona a la pag que coloque aquí -->
                 <form id="form1" action="VistaResultadoIndicador.php" method="post">
                     <div class="modal-header">
-                        <h4 class="modal-title">Sentido</h4>
+                        <h4 class="modal-title">Responsable indicador</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     </div>
                     <div class="modal-body">
                         <div class="form-group">
                             <nav>
                                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Resultado Indicador</a>
+                                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Responsable Indicador</a>
 
                                 </div>
                             </nav>
